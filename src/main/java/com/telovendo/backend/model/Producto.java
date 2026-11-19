@@ -19,7 +19,8 @@ public class Producto {
     private String nombre;
     private String descripcion;
     @Column(nullable = false)
-    private float precio;
+    private Float precio;
+    @Column(nullable = false)
     private String urlImagen;
     private String altImagen;
     ////#endregion
@@ -29,7 +30,7 @@ public class Producto {
 
     
 
-    public Producto(String nombre, String descripcion, float precio, String urlImagen, String altImagen) {
+    public Producto(String nombre, String descripcion, Float precio, String urlImagen, String altImagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -63,11 +64,11 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public float getPrecio() {
+    public Float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(Float precio) {
         this.precio = precio;
     }
 
