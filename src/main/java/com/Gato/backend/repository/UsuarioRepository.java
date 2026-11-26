@@ -1,5 +1,10 @@
 package com.Gato.backend.repository;
 
-public interface UsuarioRepository {
+import com.Gato.backend.model.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
     
 }
