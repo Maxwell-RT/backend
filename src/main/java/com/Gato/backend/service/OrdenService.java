@@ -1,4 +1,4 @@
-package com.telovendo.backend.service;
+package com.Gato.backend.service;
 
 import org.springframework.stereotype.Service;
 

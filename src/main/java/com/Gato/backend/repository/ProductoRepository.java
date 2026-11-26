@@ -1,9 +1,9 @@
-package com.telovendo.backend.repository;
+package com.Gato.backend.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.telovendo.backend.model.Producto;
+import com.Gato.backend.model.Producto;
 
 
 

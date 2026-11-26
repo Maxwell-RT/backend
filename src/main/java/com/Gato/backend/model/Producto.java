@@ -1,4 +1,4 @@
-package com.telovendo.backend.model;
+package com.Gato.backend.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

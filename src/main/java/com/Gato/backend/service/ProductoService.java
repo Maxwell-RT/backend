@@ -1,12 +1,12 @@
-package com.telovendo.backend.service;
+package com.Gato.backend.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.telovendo.backend.model.Producto;
-import com.telovendo.backend.repository.ProductoRepository;
+import com.Gato.backend.model.Producto;
+import com.Gato.backend.repository.ProductoRepository;
 
 @Service
 public class ProductoService {

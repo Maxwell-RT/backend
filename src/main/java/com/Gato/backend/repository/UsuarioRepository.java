@@ -1,4 +1,4 @@
-package com.telovendo.backend.repository;
+package com.Gato.backend.repository;
 
 public interface UsuarioRepository {
     
