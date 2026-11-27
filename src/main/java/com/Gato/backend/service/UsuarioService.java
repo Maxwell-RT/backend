@@ -63,6 +63,8 @@ public class UsuarioService {
         return usuarioRepository.save(save(nuevaInfo));
     }
 
+    
+
     //Eliminar usuario
     public void EliminarUsuario(Long id){
         if(usuarioRepository.existsById(id)==false)
