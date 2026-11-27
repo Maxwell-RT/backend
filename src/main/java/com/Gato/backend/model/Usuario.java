@@ -109,4 +109,8 @@ public class Usuario {
         this.rut = rut;
     }
 
+    
+    public Set<Rol> getRoles() { return roles; }
+    public void setRoles(Set<Rol> roles) { this.roles = roles; }
+
 }
