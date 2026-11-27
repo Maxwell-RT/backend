@@ -7,11 +7,12 @@ import org.springframework.stereotype.Component;
 import com.Gato.backend.model.Rol;
 import com.Gato.backend.repository.RolRepository;
 
-// [FASE 5] Descomentar estos 3 imports cuando Spring Security esté configurado
-// import com.telovendo.backend.model.Usuario;
-// import com.telovendo.backend.repository.UsuarioRepository;
-// import org.springframework.security.crypto.password.PasswordEncoder;
+import com.Gato.backend.model.Usuario;
+import com.Gato.backend.repository.UsuarioRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
+
+//[FASE 5] Descomentar estos 3 imports cuando Spring Security esté configurado
 @Component
 public class DataInitializer implements CommandLineRunner {
 
@@ -61,7 +62,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     private Rol crearRolSiNoExiste(String nombre) {
-        return rolRepository.findByyNombre(nombre)
+        return rolRepository.findByNombre(nombre)
                 .orElseGet(() -> rolRepository.save(new Rol(nombre)));
     }
 }

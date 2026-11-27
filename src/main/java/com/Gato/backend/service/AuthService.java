@@ -51,7 +51,7 @@ public class AuthService {
             throw new IllegalArgumentException("El RUT ya está registrado.");
         }
 
-        Rol rolCliente = rolRepository.findByyNombre("ROLE_CLIENTE")
+        Rol rolCliente = rolRepository.findByNombre("ROLE_CLIENTE")
                 .orElseThrow(() -> new RuntimeException("Rol ROLE_CLIENTE no encontrado en la base de datos."));
 
         Usuario usuario = new Usuario(
