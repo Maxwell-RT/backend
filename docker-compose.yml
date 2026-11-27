@@ -1,16 +1,15 @@
 services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: bibliocat-postgres
 
-postgres:
-  image: postgres:15-alpine
-  container_name: bibliocat-postgres
-
-  environment:
-    POSTGRES_USER: postgres
-    POSTGRES_PASSWORD: admin123
-    POSTGRES_DB: bibliocatdb
-  ports:
-    - "5433:5432"
-  volumes:
-    - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: bibliocatdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 volumes:
   pgdata:
