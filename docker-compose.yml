@@ -2,12 +2,12 @@ services:
 
 postgres:
   image: postgres:15-alpine
-  container_name: telovendo-postgres
+  container_name: bibliocat-postgres
 
   environment:
     POSTGRES_USER: postgres
     POSTGRES_PASSWORD: admin123
-    POSTGRES_DB: telovendodb
+    POSTGRES_DB: bibliocatdb
   ports:
     - "5433:5432"
   volumes:
