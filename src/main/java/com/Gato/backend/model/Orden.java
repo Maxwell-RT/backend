@@ -13,7 +13,7 @@ public class Orden {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idorden;
+    private Long id;
     @Column(nullable = false)
     private String detalles;
     private String nombrelibro;
@@ -31,11 +31,11 @@ public class Orden {
     }
 
     public Long getIdorden() {
-        return idorden;
+        return id;
     }
 
     public void setIdorden(Long idorden) {
-        this.idorden = idorden;
+        this.id = idorden;
     }
 
     public String getDetalles() {

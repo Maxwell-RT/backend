@@ -24,6 +24,8 @@ public class UsuarioService {
             orElseThrow(() -> new RuntimeException("Usuario no encontrado por id: " + id));
     } 
 
+
+ 
     ///Crear usuarios
     public Usuario save(Usuario usuario){
         //no puede ser nulo
@@ -38,7 +40,11 @@ public class UsuarioService {
         //Debe tener contraseña
         if(usuario.getContraseña()==null || usuario.getContraseña().trim().isEmpty())
             throw new IllegalArgumentException("La contraseña no puede estar vacia");
+        //debe tener rut
+        if(usuario.getRut()==null || usuario.getRut().trim().isEmpty())
+            throw new IllegalArgumentException("El rut no puede estar vacio");
         return usuarioRepository.save(usuario);
+
 }
 
     public Usuario updateuser(Long id, Usuario nuevaInfo){
